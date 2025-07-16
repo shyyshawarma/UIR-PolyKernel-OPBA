@@ -1,0 +1,39 @@
+VERBOSE: True
+
+MODEL:
+  SESSION: 'UIR_PolyKernel'
+  INPUT: 'input'
+  TARGET: 'target'
+
+# Optimization arguments.
+OPTIM:
+  BATCH_SIZE: 8
+  NUM_EPOCHS: 500
+  LR_INITIAL: 2e-4
+  LR_MIN: 1e-6
+  SEED: 3407
+  WANDB: False
+
+TRAINING:
+  VAL_AFTER_EVERY: 1
+  RESUME: False
+  WEIGHT: ''
+  PS_W: 256
+  PS_H: 256
+  TRAIN_DIR: 'uieb+lsui+euvp/train' # path to training data
+  VAL_DIR: 'uieb+lsui+euvp/val'     # path to validation data
+  SAVE_DIR: 'results/save'          # path to save models and images
+  ORI: False
+  LOG_FILE: 'results/logs.json'
+
+TESTING:
+  INPUT: 'input'
+  TARGET: 'target'
+  VAL_DIR: 'uieb+lsui+euvp/test'     # path to testing data
+  WEIGHT: 'results/save/UIR_PolyKernel_epoch_68.pth'
+  SAVE_IMAGES: True
+  RESULT_DIR: 'results/save/test'
+  LOG_FILE: 'results/logs.json'
+
+LOG:
+  LOG_DIR: ''
