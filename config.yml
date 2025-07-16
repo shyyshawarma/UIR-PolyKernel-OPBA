@@ -17,7 +17,7 @@ OPTIM:
 TRAINING:
   VAL_AFTER_EVERY: 1
   RESUME: True
-  WEIGHT: 'results/save'
+  WEIGHT: 'results/save/UIR_PolyKernel_epoch_9.pth'
   PS_W: 256
   PS_H: 256
   TRAIN_DIR: 'uieb+lsui+euvp/train' # path to training data
