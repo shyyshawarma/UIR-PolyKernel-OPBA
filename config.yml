@@ -16,8 +16,8 @@ OPTIM:
 
 TRAINING:
   VAL_AFTER_EVERY: 1
-  RESUME: False
-  WEIGHT: ''
+  RESUME: True
+  WEIGHT: 'results/save'
   PS_W: 256
   PS_H: 256
   TRAIN_DIR: 'uieb+lsui+euvp/train' # path to training data
